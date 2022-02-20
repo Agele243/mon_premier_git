@@ -1,0 +1,58 @@
+h1{
+	color: blue;
+	font-style: times;
+	font-size: 40px;
+}
+#Conteneur{
+	display: flex;
+	text-align: center;
+}
+.connection
+{
+	color: green;
+	text-align: center;
+}
+.SConteneur
+{
+	border: 2px solid black;
+	width: 500PX;
+}
+
+div[class=Sconteneur]
+{
+	background: aqua;
+}
+p
+{
+	text-align: center;
+	font-family: times;
+}
+.bouton
+{
+	color: blue;
+	font-weight: bold;
+
+}
+.confience
+{
+	font-color:red;
+	text-align: center;
+	text-decoration-line: underline;
+	font-style: italic;
+}
+.tval
+{
+	font-style: italic;
+}
+.MonImg
+{
+	position: relative;
+	width: 100px;
+}
+body{
+	background: 
+}
+figcaption
+{
+	text-align: center;
+}

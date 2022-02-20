@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   
+	<title>Authentification</title>
+</head>
+<body>
+<form method="post" action="traitement.php">
+	<fieldset>
+		<legend>Informations obligatoires</legend>
+		<label for="Noms">Saisissez votre Nom complet:</label>
+		<input type="text" name="Noms" id="Noms" placeholder="Ex:Franck Agele Rubenna" required="required"/><br><br>
+		<label for="email">Saisissez votre adresse mail:</label>
+		<input type="email" name="email" id="email" placeholder="Ex:franckagele@gmail.com" required="required"/>
+		<p>
+			<label for="Institution">Selectionnner votre institution d'origine:</label>
+			<select name="Institution" id="Institution">
+
+				<optgroup label="UNIKIS">
+					<option value="faculte des sciences G3"> G3 Math-Info</option>
+					<option value="faculte des sciences L2"> L2 Math-Info</option>
+				</optgroup>
+
+				<optgroup label="ISC-KIS">
+					<option value="ISC-KIS G3"> G3 Informatique de Gestion</option>
+					<option value="ISC-KIS L2"> L2 Reseaux Informatique</option>
+					<option value="ISC-KIS L2e"> L2 Programmation</option>
+				</optgroup>
+
+				<optgroup label="ISC-ISIRO">
+					<option value="ISC-ISIRO G3"> G3 Informatique de Gestion</option>
+					<option value="ISC-ISIRO L2"> L2 Reseaux Informatique</option>
+					<option value="ISC-ISIRO L2e"> L2 Programmation</option>
+				</optgroup>
+
+			</select>
+		</p>
+		<p>
+		Precisez votre genre:
+			<input type="radio" name="Sexe" value="Homme"id="Homme"/>
+			<label for="Homme">Homme</label>
+			<input type="radio" name="Sexe" value="Femme"id="Femme"/>
+			<label for="Femme">Femme</label>
+		</p> 	
+	</fieldset>
+	<fieldset>
+		<legend>Informations facultatives</legend>
+		<p>
+			<label for="commentaire">Avez-vous un commentaire?</label>
+			<textarea name="commentaire" id="commentaire"></textarea>
+        </p>
+			
+	</fieldset>
+	<input type="submit" value="Envoyer">
+	<input type="reset" value="Annuler">
+</form>
+</body>
+</html>
